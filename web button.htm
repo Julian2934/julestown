@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Audio on Button Click</title>
+</head>
+<body>
+    <button id="playButton">Play Audio</button>
+    <audio id="audio" src="https://github.com/Julian2934/julestown/raw/main/button-click-sound.mp3" preload="auto"></audio>
+
+    <script>
+        document.getElementById('playButton').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
